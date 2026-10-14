@@ -1,10 +1,10 @@
 # Focused WhatsApp
 
-## [Download the Android APK](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.3.0/focused-whatsapp-0.3.0.apk)
+## [Download the Android APK](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.3.1/focused-whatsapp-0.3.1.apk)
 
-**Version 0.3.0 preview · Android 12 or later**
+**Version 0.3.1 preview · Android 12 or later**
 
-[Release notes and checksum](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.3.0)
+[Release notes and checksum](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.3.1)
 
 Focused WhatsApp blocks recognized Status, Channels, and Updates screens in WhatsApp and WhatsApp Business while keeping chats and calls available.
 
@@ -13,9 +13,16 @@ Focused WhatsApp blocks recognized Status, Channels, and Updates screens in What
 1. Open the APK download link on your Android phone.
 2. Allow your browser to install apps if Android asks, then confirm installation.
 3. If you already have Quiet Updates or Focused WhatsApp, install over it. **Do not uninstall first.** The app ID and signing certificate are unchanged, so your protection settings are preserved.
-4. Open Focused WhatsApp and check the phone setup checklist and protection status. Fresh installations start with protection off and no password. Android may restore the installing user's own settings backup.
+4. Open Focused WhatsApp and check the phone setup checklist and protection status. Fresh installations start with protection off, no password, and a one-minute delay in delay-only mode. Android may restore the installing user's own settings backup.
 
 Starting with 0.3.0, use **About → Check for updates** for future updates. Downloading and installing an update does not require unlocking protection or waiting out a timer. Android may require a one-time permission to install updates from Focused WhatsApp.
+
+### New in 0.3.1
+
+- Rounded, colorful controls and clearer radio choices for unlocking.
+- Redesigned About screen with light and dark themes.
+- A one-minute delay-only default for new installs; existing settings stay unchanged.
+- Changing an existing password requires the current password, even with protection off or settings unlocked.
 
 ### Preview limitations
 
