@@ -1,10 +1,10 @@
 # Focused WhatsApp
 
-## [Download the Android APK](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.3.1/focused-whatsapp-0.3.1.apk)
+## [Download the Android APK](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.3.2/focused-whatsapp-0.3.2.apk)
 
-**Version 0.3.1 preview · Android 12 or later**
+**Version 0.3.2 preview · Android 12 or later**
 
-[Release notes and checksum](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.3.1)
+[Release notes and checksum](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.3.2)
 
 Focused WhatsApp blocks recognized Status, Channels, and Updates screens in WhatsApp and WhatsApp Business while keeping chats and calls available.
 
@@ -17,12 +17,14 @@ Focused WhatsApp blocks recognized Status, Channels, and Updates screens in What
 
 Starting with 0.3.0, use **About → Check for updates** for future updates. Downloading and installing an update does not require unlocking protection or waiting out a timer. Android may require a one-time permission to install updates from Focused WhatsApp.
 
-### New in 0.3.1
+### New in 0.3.2
 
-- Rounded, colorful controls and clearer radio choices for unlocking.
-- Redesigned About screen with light and dark themes.
-- A one-minute delay-only default for new installs; existing settings stay unchanged.
-- Changing an existing password requires the current password, even with protection off or settings unlocked.
+- **Download and install** opens Android’s installation prompt automatically once the APK is verified.
+- If install-source permission is needed, granting it and returning continues automatically.
+- Declining permission or canceling installation waits for an explicit retry; retries keep the downloaded APK.
+- Protection settings and running waits are preserved.
+
+Older versions still show their separate Download and Install update buttons when installing this release. The new combined button is available after installing 0.3.2.
 
 ### Preview limitations
 
