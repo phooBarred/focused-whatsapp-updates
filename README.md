@@ -1,10 +1,10 @@
 # Focused WhatsApp
 
-## [Download the Android APK](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.4.0/focused-whatsapp-0.4.0.apk)
+## [Download the Android APK](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.4.1/focused-whatsapp-0.4.1.apk)
 
-**Version 0.4.0 · Android 12 or later**
+**Version 0.4.1 · Android 12 or later**
 
-[Release notes and checksum](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.4.0)
+[Release notes and checksum](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.4.1)
 
 Focused WhatsApp blocks recognized Status, Channels, and Updates screens in WhatsApp and WhatsApp Business while keeping chats and calls available.
 
@@ -15,7 +15,15 @@ Focused WhatsApp blocks recognized Status, Channels, and Updates screens in What
 3. If you already have Quiet Updates or Focused WhatsApp, install over it. **Do not uninstall first.** The app ID and signing certificate are unchanged, so your protection settings are preserved.
 4. Open Focused WhatsApp and check the phone setup checklist and protection status. Fresh installations start with protection off, no password, and a one-minute delay in delay-only mode. Restoring saved settings requires selecting your Google account and explicitly confirming restore inside the app.
 
-Use **About → Check for updates** for future updates. About is under Settings in 0.4.0. Downloading and installing an update does not require unlocking protection or waiting out a timer. Android may require a one-time permission to install updates from Focused WhatsApp.
+Use **About → Check for updates** for future updates. About is under Settings. Downloading and installing an update does not require unlocking protection or waiting out a timer. Android may require a one-time permission to install updates from Focused WhatsApp.
+
+### New in 0.4.1
+
+- Updated unlocking help for the selected method, stronger settings, and automatic delay reductions.
+- Green confirmation checks and red cancel/close icons. A single X appears at the top right.
+- Consistent Focus card spacing and matching top/bottom dialog margins.
+- Green pass, yellow unknown, and red fail statuses on the phone setup checklist.
+- Google backup stays under Settings; the extra About button has been removed.
 
 ### New in 0.4.0
 
