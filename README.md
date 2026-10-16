@@ -1,10 +1,10 @@
 # Focused WhatsApp
 
-## [Download the Android APK](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.4.2/focused-whatsapp-0.4.2.apk)
+## [Download the Android APK](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.5.0/focused-whatsapp-0.5.0.apk)
 
-**Version 0.4.2 · Android 12 or later**
+**Version 0.5.0 · Android 12 or later**
 
-[Release notes and checksum](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.4.2)
+[Release notes and checksum](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.5.0)
 
 Focused WhatsApp blocks recognized Status, Channels, and Updates screens in WhatsApp and WhatsApp Business while keeping chats and calls available.
 
@@ -16,6 +16,13 @@ Focused WhatsApp blocks recognized Status, Channels, and Updates screens in What
 4. Open Focused WhatsApp and check the phone setup checklist and protection status. Fresh installations start with protection off, no password, and a one-minute delay in delay-only mode. Restoring saved settings requires selecting your Google account and explicitly confirming restore inside the app.
 
 Use **About → Check for updates** for future updates. About is under Settings. Downloading and installing an update does not require unlocking protection or waiting out a timer. Android may require a one-time permission to install updates from Focused WhatsApp.
+
+### New in 0.5.0
+
+- Choose an access window from 1 minute to 3 days, or Permanent.
+- Change that preference while locked without a delay or password; it applies to the next window only.
+- Permanent access survives a phone restart until you tap End access window now. WhatsApp blocking stays on.
+- Google backup includes the chosen length, never an open access session. Existing installations keep five minutes.
 
 ### New in 0.4.2
 
