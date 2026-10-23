@@ -1,10 +1,10 @@
 # Focused WhatsApp
 
-## [Download the Android APK](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.7.0/focused-whatsapp-0.7.0.apk)
+## [Download the Android APK](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.7.1/focused-whatsapp-0.7.1.apk)
 
-**Version 0.7.0 · Android 12 or later**
+**Version 0.7.1 · Android 12 or later**
 
-[Release notes and checksum](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.7.0)
+[Release notes and checksum](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.7.1)
 
 Focused WhatsApp blocks recognized Status, Channels, and Updates screens in WhatsApp and WhatsApp Business while keeping chats and calls available.
 
@@ -16,6 +16,12 @@ Focused WhatsApp blocks recognized Status, Channels, and Updates screens in What
 4. Open Focused WhatsApp and check the phone setup checklist and protection status. Fresh installations start with protection off, no password, and a one-minute delay in delay-only mode. Restoring saved settings requires selecting your Google account and explicitly confirming restore inside the app.
 
 Use **About → Check for updates** for future updates. About is under Settings. Downloading and installing an update does not require unlocking protection or waiting out a timer. Android may require a one-time permission to install updates from Focused WhatsApp.
+
+### New in 0.7.1
+
+- A compact Focus screen with less explanatory text and consistent spacing.
+- Phone setup is available from the top-right checklist icon and from Settings. Unlock help is beside the access-card title.
+- Full-size touch targets and scrolling when enlarged text or a smaller screen needs it. Existing protection settings and waits are preserved.
 
 ### New in 0.7.0
 
