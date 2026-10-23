@@ -1,10 +1,10 @@
 # Focused WhatsApp
 
-## [Download the Android APK](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.6.0/focused-whatsapp-0.6.0.apk)
+## [Download the Android APK](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.7.0/focused-whatsapp-0.7.0.apk)
 
-**Version 0.6.0 · Android 12 or later**
+**Version 0.7.0 · Android 12 or later**
 
-[Release notes and checksum](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.6.0)
+[Release notes and checksum](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.7.0)
 
 Focused WhatsApp blocks recognized Status, Channels, and Updates screens in WhatsApp and WhatsApp Business while keeping chats and calls available.
 
@@ -16,6 +16,14 @@ Focused WhatsApp blocks recognized Status, Channels, and Updates screens in What
 4. Open Focused WhatsApp and check the phone setup checklist and protection status. Fresh installations start with protection off, no password, and a one-minute delay in delay-only mode. Restoring saved settings requires selecting your Google account and explicitly confirming restore inside the app.
 
 Use **About → Check for updates** for future updates. About is under Settings. Downloading and installing an update does not require unlocking protection or waiting out a timer. Android may require a one-time permission to install updates from Focused WhatsApp.
+
+### New in 0.7.0
+
+- Give WhatsApp and WhatsApp Business independent protection modes, weekly schedules, and daily viewing allowances, or share an allowance across both apps.
+- Set different limits by weekday, using Minutes or Hours with decimal input and readable durations.
+- Only recognized Status, Channels, and Updates viewing consumes the allowance; chats and calls stay available. Usage stays on the phone and does not reset when you edit or restore settings.
+- Rounded, borderless buttons and selections, one row of weekdays with only selected days highlighted, compact time fields, and help beside individual settings.
+- Settings access still uses your existing delay/password rules. Increasing allowed access requires unlocking; stronger protection can be saved while locked.
 
 ### New in 0.6.0
 
