@@ -1,6 +1,6 @@
 # Focused WhatsApp downloads
 
-[Download version 0.7.2](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.7.2/focused-whatsapp-0.7.2.apk) · [Release details](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.7.2)
+[Download version 0.7.3](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.7.3/focused-whatsapp-0.7.3.apk) · [Release details](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.7.3)
 
 Focused WhatsApp is an experimental Android 12+ app for limiting WhatsApp Status and Channels. Chats and calls remain available. This repository contains public APK downloads; it is not the source repository.
 
@@ -10,17 +10,11 @@ For future updates, use **Settings → About → Check for updates → Download 
 
 ## This release
 
-## Reliability and protection fixes
+Adds targeted detection for a direct Channel reader showing the Follow footer. The rule uses the relationship between visible controls observed in WhatsApp 2.26.41.77, without matching message text or blocking all conversations.
 
-- Recover interrupted daily-usage saves conservatively. If usage data needs repair, repair requires unlocked settings access and keeps today's allowances exhausted.
-- Avoid repeatedly decoding unchanged protection settings and usage files while still detecting replacements and changes.
-- Pause automatic backup when a conflict, account, or configuration problem needs attention, instead of retrying indefinitely. Successful backup, restore, or sign-in can resume it.
-- Remove obsolete downloaded update files after a retry grace period.
-- Strengthen update validation, restore regression coverage, dependency checks, and the signed-release verification process.
+Regression tests cover the detected layout, ordinary chats, forwarded Channel cards and hidden controls. Both WhatsApp package names are covered by synthetic tests and emulator fixtures. The reported phone bypass still needs confirmation with this update; followed Channels and other layouts without this footer remain unverified.
 
-Install over the existing app; do not uninstall first. The application ID and signing certificate are unchanged. Existing protection settings, schedules, passwords, and waits are preserved. Updates remain available while protection is locked.
-
-Validated with unit tests, lint, signed APK inspection, Android 12 emulator scenarios, updater installation tests, and isolated backup-rule tests. Emulator fixtures do not establish real WhatsApp, Samsung, Andoff, or Google-account compatibility. The previously reported Play Protect warning has not been proven fixed.
+Existing protection settings, schedules, daily allowances, passwords and waits are preserved. Install over the existing app; do not uninstall first.
 
 ## History and limitations
 
