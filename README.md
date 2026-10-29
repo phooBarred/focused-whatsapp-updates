@@ -1,6 +1,6 @@
 # Focused WhatsApp downloads
 
-[Download version 0.7.3](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.7.3/focused-whatsapp-0.7.3.apk) · [Release details](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.7.3)
+[Download version 0.7.4](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.7.4/focused-whatsapp-0.7.4.apk) · [Release details](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.7.4)
 
 Focused WhatsApp is an experimental Android 12+ app for limiting WhatsApp Status and Channels. Chats and calls remain available. This repository contains public APK downloads; it is not the source repository.
 
@@ -10,11 +10,16 @@ For future updates, use **Settings → About → Check for updates → Download 
 
 ## This release
 
-Adds targeted detection for a direct Channel reader showing the Follow footer. The rule uses the relationship between visible controls observed in WhatsApp 2.26.41.77, without matching message text or blocking all conversations.
+Schedule and daily-allowance editing now follows your current unlock method directly from the editor.
 
-Regression tests cover the detected layout, ordinary chats, forwarded Channel cards and hidden controls. Both WhatsApp package names are covered by synthetic tests and emulator fixtures. The reported phone bypass still needs confirmation with this update; followed Channels and other layouts without this footer remain unverified.
+- Edited allowance dialogs show green Save and red Cancel. Child edits stay in their draft until you save the parent schedule.
+- Stronger plans apply immediately. In delay-enabled modes, saving a weaker plan starts the current wait or keeps an existing countdown; the change applies automatically when the wait finishes.
+- Password-only mode asks for the existing password without sending you back to Focus. Password override can save immediately.
+- Focus shows pending changes and lets you cancel them. Queued plans stay on the phone and are excluded from backups. Applying a plan does not turn protection off, open settings access, or refill daily usage.
 
-Existing protection settings, schedules, daily allowances, passwords and waits are preserved. Install over the existing app; do not uninstall first.
+Existing settings and waits are preserved. Install over the existing app; do not uninstall first.
+
+Automated coverage includes wait deadlines, reboot and cancellation, password flows, saved-state migration, backup exclusion, stale editors, and Android 12 dialog interactions with normal and enlarged text. These emulator checks do not establish Samsung, Andoff, or real WhatsApp compatibility for every route. The previously reported Play Protect warning has not been proven fixed.
 
 ## History and limitations
 
