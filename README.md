@@ -1,6 +1,6 @@
 # Focused WhatsApp downloads
 
-[Download version 0.7.5](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.7.5/focused-whatsapp-0.7.5.apk) · [Release details](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.7.5)
+[Download version 0.7.6](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.7.6/focused-whatsapp-0.7.6.apk) · [Release details](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.7.6)
 
 Focused WhatsApp is an experimental Android 12+ app for limiting WhatsApp Status and Channels. Chats and calls remain available. This repository contains public APK downloads; it is not the source repository.
 
@@ -10,16 +10,15 @@ For future updates, use **Settings → About → Check for updates → Download 
 
 ## This release
 
-Focused WhatsApp 0.7.5
+Google sign-in and Drive backup now use a separate Focused WhatsApp project instead of the previous shared project.
 
-- Google backup now uses Google Drive's hidden app storage, with account selection, Back up now, Restore backup and scheduled backups. No folder picker.
-- After updating, open Settings → Google backup, sign in, grant hidden app storage access, then choose Back up now to save this phone's settings. Connecting alone does not upload or overwrite anything.
-- Keeps protection, waits, schedules, allowances and passwords on the phone unchanged. Restore still requires protection off or unlocked. Existing Firebase backups are left untouched and are not imported automatically.
-- Protects conflicting copies and retries interrupted uploads without creating another file. Permission, full-storage and connection errors have different recovery messages.
+After updating, open Settings → Google backup, sign in again, allow hidden app storage, then choose Back up now to save this phone's current settings. Reconnecting alone does not upload settings or start scheduled backups.
 
-Validation: local JVM tests, debug/release lint and builds, and three Android 12 backup/UI regression cases passed. The release also requires the complete Android CI suite, including installer tests. Real Google account consent, Drive writes/restores and Samsung background scheduling still need phone confirmation; emulator and synthetic HTTP tests do not establish those outcomes.
+Phone settings, protection on/off, passwords, waits, usage and backup schedule are preserved. Existing cloud copies remain untouched and are not imported automatically. Do not uninstall to update.
 
-Install this update over the existing app. Do not uninstall first.
+The app now has a public homepage and privacy policy for Google consent. Actual signed-phone consent and Drive backup/restore remain acceptance checks; synthetic tests do not establish those outcomes.
+
+[App homepage](https://phoobarred.github.io/focused-whatsapp-updates/) · [Privacy policy](https://phoobarred.github.io/focused-whatsapp-updates/privacy.html)
 
 ## History and limitations
 
