@@ -1,6 +1,6 @@
 # Focused WhatsApp downloads
 
-[Download version 0.7.4](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.7.4/focused-whatsapp-0.7.4.apk) · [Release details](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.7.4)
+[Download version 0.7.5](https://github.com/phooBarred/focused-whatsapp-updates/releases/download/v0.7.5/focused-whatsapp-0.7.5.apk) · [Release details](https://github.com/phooBarred/focused-whatsapp-updates/releases/tag/v0.7.5)
 
 Focused WhatsApp is an experimental Android 12+ app for limiting WhatsApp Status and Channels. Chats and calls remain available. This repository contains public APK downloads; it is not the source repository.
 
@@ -10,16 +10,16 @@ For future updates, use **Settings → About → Check for updates → Download 
 
 ## This release
 
-Schedule and daily-allowance editing now follows your current unlock method directly from the editor.
+Focused WhatsApp 0.7.5
 
-- Edited allowance dialogs show green Save and red Cancel. Child edits stay in their draft until you save the parent schedule.
-- Stronger plans apply immediately. In delay-enabled modes, saving a weaker plan starts the current wait or keeps an existing countdown; the change applies automatically when the wait finishes.
-- Password-only mode asks for the existing password without sending you back to Focus. Password override can save immediately.
-- Focus shows pending changes and lets you cancel them. Queued plans stay on the phone and are excluded from backups. Applying a plan does not turn protection off, open settings access, or refill daily usage.
+- Google backup now uses Google Drive's hidden app storage, with account selection, Back up now, Restore backup and scheduled backups. No folder picker.
+- After updating, open Settings → Google backup, sign in, grant hidden app storage access, then choose Back up now to save this phone's settings. Connecting alone does not upload or overwrite anything.
+- Keeps protection, waits, schedules, allowances and passwords on the phone unchanged. Restore still requires protection off or unlocked. Existing Firebase backups are left untouched and are not imported automatically.
+- Protects conflicting copies and retries interrupted uploads without creating another file. Permission, full-storage and connection errors have different recovery messages.
 
-Existing settings and waits are preserved. Install over the existing app; do not uninstall first.
+Validation: local JVM tests, debug/release lint and builds, and three Android 12 backup/UI regression cases passed. The release also requires the complete Android CI suite, including installer tests. Real Google account consent, Drive writes/restores and Samsung background scheduling still need phone confirmation; emulator and synthetic HTTP tests do not establish those outcomes.
 
-Automated coverage includes wait deadlines, reboot and cancellation, password flows, saved-state migration, backup exclusion, stale editors, and Android 12 dialog interactions with normal and enlarged text. These emulator checks do not establish Samsung, Andoff, or real WhatsApp compatibility for every route. The previously reported Play Protect warning has not been proven fixed.
+Install this update over the existing app. Do not uninstall first.
 
 ## History and limitations
 
@@ -29,4 +29,4 @@ The previously reported Google Play Protect harmful-app warning has not been res
 
 Screen content stays on the phone. Optional Google backup saves configuration only; it does not back up protection activation, waits, access sessions, today's usage, or phone permissions.
 
-Account backups include a salted password verifier, never the plaintext password, messages, or screen content. Access is restricted to the signed-in account, but backups are not end-to-end encrypted and database administrators can administer them. Android automatic backup is disabled. Signing out keeps local settings and the saved cloud copy. APKs contain no personal profile, saved password, lock state, or developer backup.
+Account backups include a salted password verifier, never the plaintext password, messages, or screen content. New backups use Google Drive's hidden app storage with account/app access controls; they are not end-to-end encrypted. Copies made by version 0.7.4 or earlier remain in Firebase under its project administration and are not automatically imported or deleted. Android automatic backup is disabled. Signing out keeps local settings and the saved cloud copy. APKs contain no personal profile, saved password, lock state, or developer backup.
